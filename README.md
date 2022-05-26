@@ -4,6 +4,11 @@ Works also for CC2530.
 
 CC2531 is probably the cheapest option to control zigbee devices from your raspberry with open source software like [domoticz](https://www.domoticz.com/) or [Home assistant](https://www.home-assistant.io/hassio/).
 
+## Requirements
+This fork dropped obsolete wiringPi lib and requires regular libgpiod library.\
+So install libgpiod2 and libgpiod-dev dependencies.
+
+## More info
 **[Read the documentation for more details](https://jmichault.github.io/flash_cc2531-dok/)**
 
 You should also consult [zigbee2mqtt documentation](https://www.zigbee2mqtt.io/)

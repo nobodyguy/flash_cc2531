@@ -20,7 +20,8 @@
 //#define PIN_DC  0
 //#define PIN_DD 2
 
-  int cc_init( int pinRST, int pinDC, int pinDD );
+  int cc_init( const char* gpioDev, int pinRST, int pinDC, int pinDD );
+  void cc_deinit();
   void cc_delay( unsigned int d );
   void cc_setmult(int mult);
   int cc_getmult();
