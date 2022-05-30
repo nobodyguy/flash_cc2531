@@ -6,7 +6,7 @@ CC2531 is probably the cheapest option to control zigbee devices from your raspb
 
 ## Requirements
 This fork dropped obsolete wiringPi lib and requires regular libgpiod library.\
-So install libgpiod2 and libgpiod-dev dependencies.
+So install libgpiod-dev dependency.
 
 ## More info
 **[Read the documentation for more details](https://jmichault.github.io/flash_cc2531-dok/)**

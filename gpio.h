@@ -59,7 +59,8 @@ void gpio_deinit()
     gpiod_line_release(gpio_config.pin_mappings[i].line);
   }
 
-  gpiod_chip_unref(gpio_config.chip);
+  // in newer libgpiod: gpiod_chip_unref(gpio_config.chip);
+  gpiod_chip_close(gpio_config.chip);
 }
 
 void gpio_pin_configure(int pin, int mode)
